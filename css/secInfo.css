@@ -1,0 +1,300 @@
+.secInfo{
+    width: calc(360px - 20px);
+    padding: 10px;
+    height: auto;
+    margin: auto;         
+    display: flex;
+    flex-direction: column;
+    gap: 8px;        
+    background-color: #f8f8f8;
+}
+
+.secInfo h1{
+    font-size: .6rem;    
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.secInfo h3{
+    text-align: center;
+    font-weight: bold;    
+    font-size: .6rem;
+
+}
+
+.secInfo p{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+.secInfo span{
+    color: #00B5DD;
+}
+
+.secInfo span:hover{
+    color: #6745EF;
+}
+
+
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secInfo a{
+    width: 120px;
+    color: #ffffff;
+    background-color: #3DA9FC;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 5px 0px 5px 0px;
+    margin-top: 2px;
+    border-radius: 20px;
+    text-align: center;    
+    border: 1px solid #000;
+    letter-spacing: 2px;    
+    margin-top: 5px;
+}
+
+.secInfo a:hover{
+background-color: #6745EF;
+}
+
+
+
+
+.perfil_img1 {
+    width: 100%;    
+    height: auto;  
+    display: flex;    
+    justify-content: center;
+    align-items: center;      
+}
+
+
+.perfil_img1 img{
+    width: 120px;
+    height: 130px;
+    border-radius: 100%;  
+    padding: 10px;
+    background-color: #00B5DD;
+    box-shadow: 0 5px 5px 5px (13, 110,253, 0.6);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100%{
+        border-radius: 54% 46% 21% 79% / 20% 16% 84% 80%     ;
+    }
+    50%{
+        border-radius: 60% 40% 50% 50% / 59% 38% 62% 41% ;
+    }
+    
+}
+
+.perfil_img2{
+    display: none;
+}
+
+
+.nombre {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.log_name{        
+    padding-top: 20px;
+    text-align: center;       
+}
+
+@media screen and (min-width:768px){
+    .secInfo{
+        width: calc(768px - 40px);
+        padding: 20px;           
+        height: auto;
+        margin: auto;         
+        display: flex;
+        flex-direction: colums;
+        gap: 20px;        
+        background-color: #f8f8f8;
+        position: relative;
+    }
+
+    .log_img{
+        position: absolute;
+        right: 60px;         
+    }
+
+
+    .log_name{        
+        text-align: center;       
+    }
+
+
+    .secInfo h1{
+        font-size: .9rem;    
+        text-align: start;       
+        width: 450px;
+        padding: 10px 0px 10px 20px;
+    }
+    
+    .secInfo h3{
+        text-align: start;          
+        font-size: .8rem;
+        padding: 10px 0px 10px 20px;
+    
+    }
+    
+    .secInfo p{
+        text-align: start;        
+        font-size: 1.5rem;   
+        padding: 50px 0px 0px 20px;     
+    }
+    
+          
+    .boton{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px 100px 15px 20px;
+    }
+    
+    .secInfo a{       
+        font-size: .9rem;
+        padding: 10px 5px 10px 5px;        
+    }
+    
+    
+    .perfil_img1 {
+        width: 100%;    
+        height: auto;  
+        display: flex;    
+        justify-content: center;
+        align-items: center;      
+    }
+    
+    
+    .perfil_img1 img{
+        width: 170px;
+        height: 180px;
+        border-radius: 100%;  
+        padding: 10px;       
+        
+        background-color: #00B5DD;
+        box-shadow: 0 5px 5px 5px (13, 110,253, 0.6);
+        animation: animate 5s ease-in-out infinite;
+        transition: all 1s ease-in-out;
+    }
+
+    @keyframes animate {
+        0%, 100%{
+            border-radius: 54% 46% 21% 79% / 20% 16% 84% 80%     ;
+        }
+        50%{
+            border-radius: 60% 40% 50% 50% / 59% 38% 62% 41% ;
+        }
+        
+    }
+
+.nombre {
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:1440px){
+
+    .secInfo{
+        width: calc(1440px - 160px);
+        padding: 80px;        
+        height: auto;
+        margin: auto;         
+        display: flex;
+        flex-direction: colums;
+        gap: 40px;        
+        background-color: #f8f8f8;
+        position: relative;
+    }
+
+    .log_img{
+        position: absolute;
+        right: 200px;   
+        top: 50px;      
+    }
+
+
+    .secInfo h1{
+        font-size: 1.5rem;            
+        width: 650px;
+        padding: 10px 0px 10px 20px;
+    }
+    
+    .secInfo h3{
+        text-align: start;          
+        font-size: 1.2rem;
+        padding: 10px 0px 10px 20px;
+    
+    }
+    
+    .secInfo p{
+        text-align: start;        
+        font-size: 2.5rem;   
+        padding: 50px 0px 0px 20px;     
+    }
+    
+          
+    .boton{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px 100px 15px 20px;
+    }
+    
+    .secInfo a{       
+        font-size: 1.3rem;
+        padding: 20px 40px 20px 25px;        
+    }
+    
+    
+    .perfil_img1 {
+        width: 100%;    
+        height: auto;  
+        display: flex;    
+        justify-content: center;
+        align-items: center;      
+    }
+    
+    
+    .perfil_img1 img{
+        width: 270px;
+        height: 300px;
+    }
+
+    .perfil_img1 img:hover{
+        background-color: #6745EF;
+    }
+
+
+    .nombre {
+        font-size: 2.5rem;
+        }
+
+
+
+        
+}
+
+@media screen and (min-width:1440px){
+    
+}

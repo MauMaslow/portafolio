@@ -1,0 +1,533 @@
+#contTodos,#contAtn,#contVentas,#contMesa,#contCapa,#contProf,#contAnalist{
+    display: none;
+}
+
+.experiencia{
+    width: calc(360px - 20px);
+    padding: 10px;
+    background-color: #D8EEFE;
+    margin: auto;
+}
+
+.experiencia h2{
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 1.2rem;    
+    font-family: 'Bree Serif', serif;
+}
+
+.contenedor_exp{    
+    padding:  10px 0px 10px 0px;   
+}
+
+.experiencia button{
+    color: #fff;
+    background-color: #3DA9FC;
+    font-weight: bold;
+    font-size: .5rem;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    margin-top: 5px;
+}
+
+.experiencia button:hover{
+    font-size: .55rem;   
+}
+
+
+.experiencia .seleccionado_exp{
+    background-color: #6745EF;    
+}
+
+
+.descripcion_exp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {    
+    width: 160px;
+    height: 150px;
+    background-color: gray;
+}
+
+.box_coment {
+    width: calc(100% - 20px);
+    height: auto;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: solid 1px #000;
+}
+
+.box_coment {
+    font-weight: bold;
+    font-size: .6rem;
+    text-align: justify;
+    padding: 10px;
+}
+
+.box_filter{    
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*flip*/
+
+.box_card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;  
+    
+}
+
+.card-container{
+    border-radius: 20px; 
+}
+
+.card_job {
+    width: 160px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 20px; 
+}
+
+
+.card_front, .card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer;
+    transform-style: preserve-3d; /* Agregamos esta propiedad */
+    border-radius: 20px;    
+}
+
+.card_front{
+    color: #fff;
+}
+
+.card_back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+}
+
+
+.card_front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+}
+
+.card_front .fa-solid {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+}
+
+.card_back{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;   
+    border-radius: 20px;     
+}
+
+.card_back h3 {
+    position: absolute;
+    text-align: center;    
+    color: #5e5e5e;
+    font-weight: bold;    
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    top: 25px;    
+}
+
+.card_back p {
+    font-size: .55rem;
+    padding: 0px 7px 0px 7px;
+}
+
+.card_back p span {
+    font-size: .55rem;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.card_back a {   
+    position: absolute;
+    width: 60px;
+    color: #fff;
+    background-color: #3DA9FC;
+    font-weight: bold;
+    font-size: .6rem;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    margin: auto;    
+    text-align: center;
+    bottom: 10px;
+    letter-spacing: 1px
+}
+
+
+
+.card_back .fa-solid {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #5e5e5e;
+ }
+
+
+.box_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+
+.exp_link{
+    margin-top: 7px;    
+    width: 100%;
+    font-size: .6rem;
+    font-family: 'Bree Serif', serif;  
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+ }
+
+ .exp_link a{
+    font-size: .6rem;
+    font-family: 'Bree Serif', serif;  
+
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    background-color: #6745EF;  
+    color: #fff;
+ }
+
+
+ .exp_link a:hover{
+    background-color: #4f22ff;  
+ }
+
+ @media screen and (min-width:768px){
+
+    
+.experiencia{
+    width: calc(768px - 40px);
+    padding: 20px;    
+}
+
+.experiencia h2{
+    margin-top: 7px;    
+    font-size: 1.5rem;        
+}
+
+.contenedor_exp{    
+    padding:  15px 0px 10px 0px;   
+}
+
+.experiencia button{   
+    font-size: .7rem;    
+    padding: 5px 9px 5px 9px;    
+}
+
+.experiencia button:hover{
+    font-size: .8rem;   
+}
+
+.descripcion_exp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {    
+    width: 160px;
+    height: 150px;
+    background-color: gray;
+}
+
+.box_coment {
+    width: calc(100% - 20px);
+    height: auto;
+}
+
+.box_coment {    
+    font-size: .8rem;    
+    padding: 15px;
+}
+
+.box_filter{    
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*flip*/
+
+.box_card{
+    width: 100%;
+    padding-top: 15px;    
+    gap: 20px;  
+    
+}
+
+.card-container{
+    border-radius: 20px; 
+}
+
+.card_job {
+    width: 225px;
+    height: 300px;
+}
+
+.card_front .fa-solid {
+   font-size: 2rem;
+}
+
+.card_back h3 { 
+    font-size: 1.7rem;
+}
+
+.card_back p {
+    font-size: .7rem;
+    padding: 0px 7px 0px 7px;
+}
+
+.card_back p span {
+    font-size: .7rem;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.card_back a {   
+    position: absolute;
+    width: 60px;
+    color: #fff;
+    background-color: #3DA9FC;
+    font-weight: bold;
+    font-size: .6rem;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    margin: auto;    
+    text-align: center;
+    bottom: 10px;
+    letter-spacing: 1px
+}
+
+
+
+
+.box_info {    
+    gap: 20px;    
+}
+
+
+
+.exp_link{
+    font-size: .8rem;    
+    gap: 5px;    
+ }
+
+ .exp_link a{
+    font-size: .8rem;    
+    padding: 5px 9px 5px 9px;    
+ }
+
+
+
+ }
+
+
+
+ @media screen and (min-width:1440px){
+
+    
+.experiencia{
+    width: calc(1440px - 160px);
+    padding: 40px 80px 40px 80px;  
+}
+
+.experiencia h2{
+    margin-top: 7px;    
+    font-size: 2.5rem;        
+}
+
+.contenedor_exp{     
+    padding:  25px 0px 25px 0px;   
+}
+
+.experiencia button{   
+    font-size: 1.2rem;        
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;   
+}
+
+.experiencia button:hover{
+    font-size: 1.3rem;   
+}
+
+.descripcion_exp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;        
+}
+
+.card {        
+    width: 160px;
+    height: 150px;
+    background-color: gray;
+}
+
+.box_coment {
+    width: calc(100% - 20px);
+    height: auto;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.box_coment {    
+    font-size: 1.2rem;      
+    padding: 20px;
+}
+
+.box_filter{    
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*flip*/
+
+.box_card{
+    width: 100%;
+    padding-top: 30px;    
+    gap: 20px;  
+    
+}
+
+.card-container{
+    border-radius: 20px; 
+}
+
+.card_job {
+    width: 410px;
+    height: 500px;
+}
+
+.card_front .fa-solid {
+   font-size: 3rem;
+   right: 30px;
+   top: 15px;
+}
+
+.card_back .fa-solid {       
+    font-size: 2.5rem;
+    right: 30px;
+    top: 15px;
+ }
+
+
+.card_back h3 { 
+    margin-top: 30px;
+    font-size: 3rem;
+}
+
+.card_back p {
+    font-size: 1.2rem;
+    padding: 0px;
+}
+
+.card_back p span {
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.card_back a {   
+    position: absolute;
+    width: 60px;
+    color: #fff;
+    background-color: #3DA9FC;
+    font-weight: bold;
+    font-size: .6rem;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    margin: auto;    
+    text-align: center;
+    bottom: 10px;
+    letter-spacing: 1px
+}
+
+
+
+
+.box_info {    
+    gap: 30px;
+    padding: 20px; 
+    margin-top: 30px;   
+}
+
+
+
+.exp_link{
+    font-size: 1.4rem;    
+    gap: 5px; 
+    font-weight: bold;   
+ }
+
+ .exp_link a{
+    font-size: 1.2rem;    
+    padding: 8px 11px 8px 11px;    
+ }
+
+
+
+ }

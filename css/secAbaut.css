@@ -1,0 +1,243 @@
+.abaut{
+    width: calc(360px - 20px);
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f8f8f8;
+    margin: auto;
+}
+
+.abaut_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.abaut_info h2{
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 1.2rem;    
+    font-family: 'Bree Serif', serif;
+}
+
+.abaut_info p{    
+    font-size: .7rem;
+    
+    font-family: 'Bree Serif', serif;
+    text-align: justify;
+}
+
+
+.abaut_trayectoria{    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+
+.abaut_trayectoria table{    
+    font-size: .7rem;
+    font-family: 'Bree Serif', serif;        
+    border: 1px solid #000;
+}
+
+.abaut_trayectoria table td, th{   
+    text-align: start;
+    width: 70%;    
+ }
+
+ .abaut_trayectoria table th{
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #000;
+    background-color: #D8EEFE;
+ }
+
+ .abaut_trayectoria table td{
+    
+    padding: 5px 10px 5px 10px;
+    border-right: 1px solid #000;
+ }
+
+ .abaut_link{
+    font-size: .6rem;
+    font-family: 'Bree Serif', serif;  
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;    
+ }
+
+ .abaut_link a{
+    font-size: .6rem;
+    font-family: 'Bree Serif', serif;  
+
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    background-color: #6745EF;  
+    color: #fff;
+ }
+
+ .abaut_link a:hover{
+    background-color: #4f22ff;  
+ }
+
+ .abaut_trayectoria .celda_centrada{
+padding-left: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #fff; /* Color para filas pares */
+  }
+  
+  /* Estilo para filas impares */
+  tr:nth-child(odd) {
+    background-color: #ebf4fa; /* Color para filas impares */
+  }
+
+  @media screen and (min-width:768px){
+    .abaut{
+        width: calc(768px - 40px);
+        padding: 0px 20px 20px 20px;        
+        gap: 20px;        
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .abaut_info{
+        gap: 20px;
+        width: 350px;        
+    }
+    
+    .abaut_info h2{           
+        font-size: 1.5rem;            
+    }
+    
+    .abaut_info p{    
+        font-size: .9rem;
+    }
+    
+    
+    .abaut_trayectoria{    
+        gap: 10px;   
+    }
+    
+    .abaut_trayectoria table{   
+        margin-top: 70px; 
+        font-size: .9rem;
+    }    
+
+    
+     .abaut_trayectoria table th{
+        text-align: center;
+        padding: 10px 15px 10px 15px;        
+     }
+    
+     .abaut_trayectoria table td{        
+        padding: 10px 15px 10px 15px;        
+     }
+    
+     .abaut_link{
+        font-size: .8rem;        
+        gap: 5px;        
+     }
+    
+     .abaut_link a{
+        font-size: .8rem;        
+        padding: 5px 9px 5px 9px;        
+     }
+        
+     .abaut_trayectoria .celda_centrada{
+    padding-left: 15px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #fff; /* Color para filas pares */
+      }
+      
+      /* Estilo para filas impares */
+      tr:nth-child(odd) {
+        background-color: #ebf4fa; /* Color para filas impares */
+      }
+    
+
+  }
+
+
+  @media screen and (min-width:1440px){
+    
+    .abaut{
+        width: calc(1440px - 160px);
+        padding: 10px 80px 40px 80px;        
+        gap: 20px;        
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .abaut_info{
+        gap: 20px;
+        width: 60%;        
+    }
+    
+    .abaut_info h2{           
+        font-size: 2.5rem;           
+    }
+    
+    .abaut_info p{   
+        margin-top: 10px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+    
+    .abaut_trayectoria{    
+        gap: 10px;   
+    }
+    
+    .abaut_trayectoria table{   
+        margin-top: 70px; 
+        font-size: 1.3rem;
+        width: 500px;
+    }    
+
+    
+     .abaut_trayectoria table th{
+        text-align: center;
+        padding: 10px 15px 10px 15px;   
+        font-size: 1.4rem;  
+        font-weight: bold;     
+     }
+    
+     .abaut_trayectoria table td{        
+        padding: 10px 15px 10px 25px;        
+     }
+    
+     .abaut_link{
+        font-size: 1.4rem;        
+        gap: 5px;     
+        font-weight: bold;   
+     }
+    
+     .abaut_link a{
+        font-size: 1.2rem;        
+        padding: 8px 11px 8px 11px;        
+     }
+        
+     .abaut_trayectoria .celda_centrada{
+        padding-left: 25px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #fff; /* Color para filas pares */
+      }
+      
+      /* Estilo para filas impares */
+      tr:nth-child(odd) {
+        background-color: #ebf4fa; /* Color para filas impares */
+      }
+    
+  }

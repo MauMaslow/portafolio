@@ -1,0 +1,163 @@
+
+#contenidoTodos,#contenidoHTML5,#contenidoCSS,#contenidoJavaScript,#contenidoReact,#contenidoFigma{
+    display: none;
+}
+
+
+.miPasion{    
+    width: calc(360px - 20px);
+    padding: 10px;
+    background-color: #D8EEFE;
+    margin: auto;
+}
+
+.miPasion h2{        
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 1.2rem;    
+    font-family: 'Bree Serif', serif;
+}
+
+.contenedor{    
+    padding:  10px 0px 10px 0px;   
+}
+
+.miPasion button{
+    color: #fff;
+    background-color: #3DA9FC;
+    font-weight: bold;
+    font-size: .5rem;
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    border: solid 1px #000;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.miPasion button:hover{
+    font-size: .55rem;   
+}
+
+.miPasion .seleccionado{
+    background-color: #6745EF;    
+}
+
+.cards_content{
+    width: 100%;
+    height: auto;        
+    
+}
+
+
+.cards_seccion {
+    width: 100%;   
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.cards_seccion .card {
+    width: 160px;
+    height: 180px;
+    background-color: gray;
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;    
+}
+
+@media screen and (min-width:768px){
+
+    .miPasion{    
+        width: calc(768px - 40px);
+        padding: 20px;        
+    }
+    
+    .miPasion h2{            
+        margin-top: 7px;        
+        font-size: 1.5rem;            
+    }
+    
+    .contenedor{    
+        padding:  15px 0px 15px 0px;   
+    }
+    
+    .miPasion button{       
+        font-size: .7rem;        
+        padding: 5px 7px 5px 7px;
+        margin-top: 5px;
+    }
+    
+    .miPasion button:hover{
+        font-size: .8rem;   
+    }
+    
+    
+    .cards_seccion {
+        width: 100%;   
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        flex-wrap: wrap;
+        gap: 15px;
+        
+    }
+    
+    .cards_seccion .card {
+        width: 230px;
+        height: 240px;
+        background-color: gray;
+    }
+    
+
+}
+
+
+
+@media screen and (min-width:1440px){
+    
+    .miPasion{    
+        width: calc(1440px - 160px);
+        padding: 40px 80px 40px 80px;         
+    }
+    
+    .miPasion h2{            
+        margin-top: 7px;        
+        font-size: 2.5rem;            
+    }
+    
+    .contenedor{    
+        padding:  35px 0px 35px 0px;   
+        display: flex;
+        gap: 15px;
+    }
+    
+    .miPasion button{       
+        font-size: 1.2rem;        
+        padding: 10px 20px 10px 20px;
+        margin-top: 5px;
+        border-radius: 20px;
+        
+    }
+    
+    .miPasion button:hover{
+        font-size: 1.3rem;   
+    }    
+    
+    .cards_seccion .card {
+        width: 300px;
+        height: 350px;
+        background-color: gray;
+    }
+    
+
+}

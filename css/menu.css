@@ -1,0 +1,214 @@
+
+.menu{
+    width: calc(360px - 20px);
+    padding: 10px; 
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    background-color: #D8EEFE;  
+    position: relative;   
+}
+
+
+.fixed_menu{
+    width: calc(360px - 20px);
+    padding: 10px;
+    margin: auto;
+    position: fixed;        
+    display: flex;
+    justify-content: flex-start;          
+    gap: 20px;
+    background-color: #D8EEFE;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    top: 0;
+}
+
+
+.img_contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+.img_contenedor i {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.info {
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+
+.contenedor_enlaces-principal{
+    width: calc(100% - 20px);    
+    position: relative;    
+    position: absolute;
+}
+
+.contenedor_enlaces {
+    width: 100%;
+    position: absolute; 
+    top: 18px;
+    left: -10px; 
+    z-index: 2;       
+}
+
+.list_contenedor{    
+    width: calc(60% - 20px);
+    height: 100%;
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;    
+    padding: 10px;
+    gap: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #edf6fd; 
+    text-align: start;
+}
+
+
+
+.remove {
+    display: none;
+}
+
+
+.list_contenedor li {
+    border-bottom: 2px solid #3DA9FC; /* Cambia #FF0000 al color que desees */
+    padding-bottom: 5px; /* Espacio entre la línea y el texto (ajústalo según tus preferencias) */
+    margin-bottom: 5px; /* Espacio entre elementos de la lista (ajústalo según tus preferencias) */
+  }
+
+
+  .list_contenedor li:hover{
+    color: #6745EF;
+    font-size: .8rem;
+    font-weight: bold;
+    }
+
+
+    @media screen and (min-width:768px){
+        .menu{
+            width: calc(768px - 40px);
+            padding: 20px;       
+        }
+
+        .img_contenedor i {
+            font-size: 1.5rem;  
+            
+        }
+
+        .info {
+            font-size: 1.2rem;                      
+        }
+        
+
+        .contenedor_enlaces {           
+            top: 31px;
+            left: -30px; 
+            z-index: 2;       
+        }
+
+
+        .list_contenedor{    
+            width: calc(60% - 20px);
+            height: 100%;
+            font-size: .9rem;
+            display: flex;
+            flex-direction: column;    
+            padding: 15px 30px 15px 30px;
+            gap: 5px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            background-color: #edf6fd; 
+            text-align: start;
+        }
+        
+        
+    }
+
+
+@media screen and (min-width:1440px){
+
+    .menu{
+        width: calc(1440px - 80px);
+        padding: 40px;  
+        flex-direction: row-reverse;
+        justify-content:center;  
+    }
+
+    .fixed_menu{
+        width: calc(1440px - 80px);
+        justify-content:center;   
+        align-items: center;
+        
+    }
+
+    .info {
+        font-size: 1.7rem;    
+        display: none;                  
+    }
+    
+    .img_contenedor{
+        display: none;
+    }
+    
+    .contenedor_enlaces-principal{
+        all: unset;                   
+    }
+    
+    .contenedor_enlaces{
+        all: unset;                       
+    }
+
+    .list_contenedor{
+        all: unset;   
+        display: flex;
+        flex-direction: row;
+        gap: 20px;                    
+    }
+    
+    .list_contenedor li{
+        all: unset;  
+        font-size: 1.2rem;  
+        font-weight: bold;
+
+
+    }
+
+    .list_contenedor li:hover{ 
+        all: unset;                      
+        font-weight: bold;
+        font-size: 1.35rem;          
+    }
+
+    .list_contenedor a{
+        position: relative;
+        text-decoration: none;
+    }
+
+
+
+    .list_contenedor a::before {
+        content: "";
+        position: absolute;
+        bottom: -1px; /* Separación de 1px desde la parte inferior del texto */
+        left: 0;
+        right: 0;
+        background: #00B5DD; /* Color de la línea de fondo */
+        height: 3px; /* Grosor de la línea */
+        transform: scaleX(0); /* Inicialmente, no visible */
+        transform-origin: left;
+        transition: transform 0.3s ease; /* Animación de 0.3 segundos */
+      }
+      
+      .list_contenedor a:hover::before {
+        transform: scaleX(1); /* Mostrar la línea de fondo al 100% de ancho */
+        transform-origin: right;
+      }
+}
